@@ -60,11 +60,3 @@ requirements.txt: 專案所需的套件版本清單。
 邊界值範例：在 user_system.py 中，帳號長度限制為 > 3。因此測試案例中的 "Bob" 會觸發錯誤，這是教學中刻意設計的報錯點，用來練習如何讀取測試報告。
 
 環境隔離：本專案使用 pytest fixture 確保每個測試案例都在乾淨的狀態下執行。
-
-完成貼上並存檔後，記得回到終端機執行最後的上傳指令：
-
-git add README.md
-
-git commit -m "docs: 建立完整的專案說明文件"
-
-git push origin main
