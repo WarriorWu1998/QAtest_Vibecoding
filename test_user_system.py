@@ -21,8 +21,8 @@ def test_username_too_short(system):
 
 def test_duplicate_registration(system):
     """測試重複註冊"""
-    system.register_user("Bobby", "securePass123")
-    result = system.register_user("Bobby", "anotherPass")
+    system.register_user("Bob", "securePass123")
+    result = system.register_user("Bob", "anotherPass")
     assert result == "Error: User already exists"
 
 def test_password_too_weak(system):

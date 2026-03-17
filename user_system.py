@@ -11,7 +11,7 @@ class UserManager:
         2. 帳號不能重複。
         3. 密碼長度必須大於 6 個字元。
         """
-        if len(username) < 3:
+        if len(username) <= 3:
             return "Error: Username too short"
         
         if username in self.users:
